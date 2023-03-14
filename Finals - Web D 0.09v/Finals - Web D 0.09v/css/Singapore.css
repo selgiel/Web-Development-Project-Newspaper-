@@ -1,0 +1,234 @@
+/*Linkage to external fontstyle*/
+@font-face {
+    font-family: 'oxford';
+    src: url(../oxford-font/Oxford-LAqy.ttf);
+}
+
+/*Implement font on selected text*/
+#nav-logo, #misc, #cat-text, 
+#other-art, #nav-font, 
+#top_no, .modal-title,
+.modal-footer, .modal-body,
+.offcanvas-body{
+    font-family: 'oxford';
+}
+
+/*Size of weather, calendar and social media icons*/
+.fa-solid, .fa-sharp, #sm-icons, #sm-icon{
+    font-size: 1.5em;
+}
+
+/*Responsible for category button text colour*/
+button > h5 > a {
+    color:white;
+}
+
+/*Responsible for category buttons changing colour upon hover*/
+button > h5 > a:hover {
+    color: grey;
+}
+
+/*Responsible for category bar overlapping navbar*/
+#navbar {
+    z-index:10;
+}
+
+/*Responsible for changing bootstrap's row in-built property*/
+.row {
+    padding-right: 0;
+}
+
+/*Responsible for navbar to overlap body*/
+#header-content, #cat-text {
+    position: relative;
+    z-index: 11;
+}
+
+/*Divider above logo*/
+#nav-logo:before {
+    content: "";
+    display: block;
+    width: 7em;
+    height: 0.03em;
+    background: white;
+}
+
+/*Divider below logo*/
+#nav-logo:after {
+    content: "";
+    display: block;
+    width: 7em;
+    height: 0.03em;
+    background: white;
+}
+
+/*Responsible for styling category buttons*/
+#category-text {
+    font-size: 1.8em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*Navbar categories - remove pointer*/
+#cat-list {
+    list-style-type:none;
+}
+
+/*Category bar buttons*/
+#cat-btn{
+    width:110%;
+}
+
+/*Article's text background - for visibility of text*/
+.article-bg {
+    color: white;
+    background-color: rgba(0, 0, 20, 0.6);
+}
+
+/*Responsible for background's colour gradient*/
+/*Adapted from https://codepen.io/P1N2O/details/pyBNzX*/
+#top_no, .modal-header,
+.modal-footer {
+	background: linear-gradient(-45deg, #d87373, #c53131, #f04545ea, #db9494);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+
+}
+
+.vid-img {
+    background-image: url("https://unsplash.com/photos/KR_zs4NxPzA");
+}
+
+/*Responsible for embedded YouTube videos size*/
+.vid {
+    width:100%;
+    height: 200px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*End of colour gradient effect*/
+
+/*"Subscribe Me" popup button*/
+#sub-btn {
+    bottom:0;
+    right:0;
+    position: fixed;
+}
+
+/*Standard view for Mobile*/
+@media only screen and (max-width: 769px){
+    #header-content, #cat-text, 
+    #misc, #sm-icons,
+    .add-text, #carousel, 
+    #art-text, #excl-mob, 
+    .mob-view, .divider,
+    #sub-btn, .vid
+    { 
+        display: none;   
+    }
+
+    #mob-view {
+        margin-top: 4.5rem;
+        padding: 0;
+    }
+
+    .author-text{
+        float: right;
+    }
+    .col-md-6{
+        width:50%;
+    }
+
+    /*Reflect facebook icon*/
+    #sm-icon {
+        text-align: center;
+        margin-right:2rem;
+    }
+
+    .title-text{
+        padding:0.1rem;
+    }
+
+    b, strong {
+        font-weight:bold;
+    }
+
+}
+
+/*Standard view for Tablet*/
+@media only screen and (max-width: 1300px){
+    #header-content, #cat-text, 
+    #misc, #sm-icons,
+    .add-text, #carousel, 
+    #art-text, #excl-mob, 
+    #tab-exclu, #mid-excl,
+    { 
+        display: none;   
+    }
+
+    #mob-view {
+        margin-top: 4.5rem;
+        padding: 0;
+    }
+
+    .col-md-6{
+        width:100%;
+    }
+
+    .author-text{
+        float: right;
+    }
+
+    /*Reflect facebook icon*/
+    #sm-icon {
+        text-align: center;
+        margin-right:2rem;
+    }
+
+    #alt-view1 {
+        padding-left:1rem;
+    }
+
+}
+
+/*Standard view for Larger Tablet*/
+@media only screen and (max-width: 1399px){
+    #header-content, #cat-text, 
+    #misc, #sm-icons,
+    .add-text, #carousel, 
+    #art-text, #excl-mob,
+    #misc
+    { 
+        display: none;   
+    }
+
+    #mob-view {
+        margin-top: 4.5rem;
+        padding: 0;
+    }
+
+    .author-text{
+        float: right;
+    }
+
+    /*Reflect facebook icon*/
+    #sm-icon {
+        text-align: center;
+        margin-right:2rem;
+    }
+
+    #alt-view1 {
+        padding-left:1rem;
+    }
+    
+}

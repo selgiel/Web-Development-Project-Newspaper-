@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%;margin: 0px;padding: 0px;overflow-x: hidden; ">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Photography</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/Photography.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    </head>
+    <body>
+
+    <!--Start of NavBar-->
+    <nav class="navbar navbar-dark bg-transparent fixed-top pb-0" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <h5 id="nav-logo">
+              Daily <br> Communiqué
+            </h5>
+        </a>
+        <div class="row text-white text-nowrap ms-auto g-2 p-1" id="misc">
+          <div class="col-md-6">
+            <div><a href="http://www.weather.gov.sg/home/" class="text-decoration-none text-white"><i class="fa-solid fa-sun p-2 fs-3"></i></a>Sunny | 31°</div>
+          </div>
+          <div class="col-md-6">
+            <div><i class="fa-sharp fa-regular fa-calendar p-2 fs-4"></i>Fri, 31 Jan</div>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark bg-black" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-black">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <h3 id="navbar-header"><a class="nav-link active text-white" aria-current="page" href="index.html">Home</a></h3>
+              </li>
+              <li class="nav-item text-white fs-5">
+                <h5>Categories</h5>
+                <ul id="cat-list">
+                  <li><a href="Singapore.html" class="text-decoration-none  text-white">Singapore</a></li>
+                  <li><a href="World.html" class="text-decoration-none text-white">World</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Politics</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Finance</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Sports</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Environment</a></li>
+                  <li><a href="#" class="text-decoration-none text-white">Photography</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown fs-5">
+                <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu dropdown-menu">
+                  <li><a class="dropdown-item lead fs-6" href="#">help@dailycommunique.com</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item lead fs-6" href="#">+65 9123 4567</a></li>
+                </ul>
+              </li>
+              <div class="row p-0">
+                <p class="ms-auto fs-5 text-white">Join our mailing list today!</p>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enter</button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--End of NavBar-->
+
+    <!--Start of Categories Bar-->
+    <header>
+      <div class="row justify-content-center bg-black pt-3 pb-2" id="cat-text">
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-transparent" id="cat-btn"><h5>
+            <a href="Singapore.html" class="text-decoration-none text-white">Singapore</a></h5></button>
+        </div>
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-black" id="cat-btn"><h5>
+            <a href="World.html" class="text-decoration-none text-white">World</a></h5></button>
+        </div>
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-black" id="cat-btn"><h5>
+            <a href="World.html" class="text-decoration-none text-white" >Politics</a></h5></button>
+        </div>
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-black" id="cat-btn"><h5>
+            <a href="World.html" class="text-decoration-none text-white">Finance</a></h5></button>
+        </div>
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-black" id="cat-btn"><h5>
+            <a href="World.html" class="text-decoration-none text-white">Sports</a></h5></button>
+        </div>
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-black" id="cat-btn"><h5>
+            <a href="World.html" class="text-decoration-none text-white">Lifestyle</a></h5></button>
+        </div>
+        <div class="col-md-1" id="category-text">
+          <button type="button" class="btn btn-black" id="cat-btn"><h5>
+            <a href="#.html" class="text-decoration-none text-warning">Photography</a></h5></button>
+        </div>
+      </div>
+    </header>
+    <!--End of Categories bar-->
+
+    <!--Start of Content-->
+    <main>
+      <!--Start of Introductory Text-->
+      <div class="container p-3 display-5 text-white" id="intro-text">
+      <div class="row-fluid display-5 pb-5" id="intro-text">
+        Pictures by our valuable readers 
+        <div class="lead fs-4">Feel free to contribute by sending in pictures 
+          <a href= "mailto: DailyCommunique@email.com" class="text-white" title="Click to find contribute">here
+         </a>
+        </div>
+      </div> 
+      <!--End of Introductory Text-->
+
+      <div class="row">
+        <!--Start of FIRST column pictures and texts-->
+        <div class="col-md-4 p-1">
+          <div class="overlay-box">
+            <p class="desc fs-5 lead mb-0">
+              Shot by: Aqilah Hamdan <br> Emotional times calls for B&W</p>
+            <img src="images/photo-1.jpg" class="overlay-box img-fluid rounded">
+          </div>
+          <div class="overlay-box">
+            <p class="desc fs-5 lead mb-0">
+              Shot by: Mvrk <br> Apple SG
+            </p>
+            <img src="images/photo-2.jpg" class="img-fluid rounded">
+          </div>
+          <div class="overlay-box">
+            <p class="desc fs-5 lead mb-0">
+              Shot by: Carlie Yu <br> Ferris Wheel
+            </p>
+            <img src="images/photo-3.jpg" class="overlay-box img-fluid rounded">
+          </div>
+          <div class="overlay-box">
+            <p class="desc fs-5 lead mb-0">
+              Shot by: luxy_lux <br> YSL
+            </p>
+            <img src="images/photo-4.jpg" class="overlay-box img-fluid rounded">
+          </div>
+          <div class="overlay-box">
+            <p class="desc fs-5 lead mb-0">
+              Shot by: Ayah Bright <br> pee pee room
+            </p>
+            <img src="images/photo-5.jpg" class="overlay-box img-fluid rounded">
+          </div>
+          <div class="container-fluid display-6 lead mt-5" id="buy-coffee">
+            Support the creators <br>
+            by buying them <br>
+            a coffee <br>
+            <div class="text-warning">today!</div>
+            <a href="https://unsplash.com/blog/contribute-to-unsplash/" class="text-decoration-none">
+              <i class="fa fa-mug-hot text-white"></i></a>
+          </div>
+          <div class="overlay-box" id="excl-mob">
+            <p class="desc fs-5 lead mb-0">
+              Shot by: Aqilah H. <br> Starbies
+            </p>
+            <img src="images/photo-6.jpg" class="overlay-box img-fluid rounded">
+          </div>
+        </div>
+      <!--End of FIRST column pictures and texts-->
+
+      <!--Start of SECOND column pictures and texts-->
+      <div class="col-md-4" id="excl-mob">
+        <div class="overlay-box">
+          <img src="images/photo-7.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1">
+            National Museum <br> Shot by: N4Hthingz
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-9.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1">
+            Sunset for Days <br> Shot by: Han
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-8.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1">
+             Not your typical car park <br>Shot by: aud4cty
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-10.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1">
+            CHAMP <br> Shot by: Kiki
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-31.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1"> 
+            Local Delight; Chicken Rice! <br> Shot by: Giselle Lien
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-11.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1"> 
+            Retro roof vibes <br> Shot by: emerson urie
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-12.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1"> 
+            Jewel <br> Shot by: Qilah
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-13.jpg" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1">
+            Chatuchak Aftermath <br> Shot by: Chloe T.
+          </p>
+        </div>
+        <div class="overlay-box">
+          <img src="images/photo-32.png" class="overlay-box img-fluid rounded">
+          <p class="desc fs-5 lead mt-1">
+            meow by the deck <br> Shot by: Winnie N.
+          </p>
+        </div>
+      </div>
+      <!--End of SECOND column pictures and texts-->
+
+      <!--Start of THIRD column pictures and texts-->
+      <div class="col-md-4 p-1">
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: user21348 <br> Streetview
+          </p>
+          <img src="images/photo-14.jpg" class="overlay-box img-fluid rounded">
+        </div>
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: sharity leow <br> Gardens by the Bay
+          </p>
+          <img src="images/photo-15.jpg" class="overlay-box img-fluid rounded">
+        </div>
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: Aqilah Hamdan <br> Hazy Dayz</p>
+          <img src="images/photo-16.jpg" class="overlay-box img-fluid rounded">
+        </div>
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: A. H.<br> Studying for A Levels
+          </p>
+          <img src="images/photo-17.jpg" class="img-fluid rounded">
+        </div>
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: lily hoong <br> Eccentric Mio (Cat's Name)
+          </p>
+          <img src="images/photo-18.jpg" class="overlay-box img-fluid rounded">
+        </div>
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: Aqilah Hamdan <br> Late Nights
+          </p>
+          <img src="images/photo-19.jpg" class="overlay-box img-fluid rounded">
+        </div>
+        <div class="overlay-box">
+          <p class="desc fs-5 lead mb-1">
+            Shot by: Hui Xuan<br> Alexendra Moments
+          </p>
+          <img src="images/photo-20.jpg" class="overlay-box img-fluid rounded">
+        </div>
+      </div>
+      <!--END of THIRD column pictures and texts-->
+
+      <!-- Start of "For more information" button -->
+      <button type="button" class="btn btn-black text-white fs-5" id="other-art" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        For more information
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-black">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Disclaimer</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-white bg-black fs-5" id="other-art">
+              Here are some things to take note: 
+              <ol> <br>
+                <li>You are free to reuse the photos under our Free Use Act</li> <br>
+                <li>For creators: <br> Please note that by submitting the pictures to Daily Communiqué
+                  Creative team, you will not interfere with the private use and circulation 
+                  of the image
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer bg-black">
+              <button type="button" class="btn btn-black text-white" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of "For more information" button-->
+    </main>
+    <!--End of Content-->
+    
+    <!--Start of Footer-->
+    <footer>
+      <!--Start of Social Media icons-->
+      <div class="row justify-content-center ms-3">
+        <div class="col-md-1 ms-1" id="sm-icon">
+          <a class="sm-links fs-5 ms-1 text-decoration-none text-white" href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f"></i></a></i>
+        </div>
+        <div class="col-md-1" id="sm-icons">
+          <a class="sm-links fs-5 ms-1 text-decoration-none text-white" href="https://twitter.com/?lang=en">
+            <i class="fa-brands fa-twitter"></i></a></i>
+        </div>
+        <div class="col-md-1" id="sm-icons">
+        <a class="sm-links fs-5 ms-1 text-decoration-none text-white" href="https://www.instagram.com/">
+          <i class="sm-icon fa-brands fa-instagram"></i></a></i>
+      </div>     
+    </div>
+    <!--End of Social Media icons-->
+
+    <!--Adapted from https://www.youtube.com/watch?v=29ENlVMuTHs-->
+    <!--Start of "Subscribe Now" pop up button-->
+    <button type="button" class="btn btn-white text-secondary fixed fs-5" id="sub-btn" data-bs-toggle="modal" data-bs-target="#myModal">Subscribe now!</button>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h5 class="modal-title text-white">
+                  Daily <br> Communiqué
+              </h5>
+            </div>
+            <div class="modal-body fs-5" id="other-art">
+              <form>
+                <div class="mb-2 display-6 text-white">Receive the latest newsletter from us daily!</div>
+                <div class="mb-3 text-white">
+                  <label class="form-label required">Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3 text-white">
+                  <label class="form-label required">Email</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="mb-3 text-white">
+                  <label class="form-label required">Promocode</label>
+                  <input type="email" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer btn-clr bg-black" id="modal-grad">
+              <button class="btn btn-transparent text-white border-0" type="submit" data-bs-dismiss="modal">Submit</button>
+              <button class="btn btn-transparent text-white border-0" type="submit" data-bs-dismiss="modal">I'll think about it</button>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <!--End of "Subscribe Now" pop up button-->  
+    </footer>
+    <!--End of Footer-->
+
+    <!--Adapted from https://www.youtube.com/watch?v=29ENlVMuTHs-->
+    <!--Start of Popup Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#myModal").modal('show');
+        });
+    </script>
+    <!--End of Popup Script-->
+
+    <!--Links to Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+    crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
+    crossorigin="anonymous"></script>
+    <!--Links to Bootstrap script-->
+    </body>
+</html>

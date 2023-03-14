@@ -1,0 +1,259 @@
+/*Linkage to external fontstyle*/
+@font-face {
+    font-family: 'oxford';
+    src: url(../oxford-font/Oxford-LAqy.ttf);
+}
+
+/*Implement font on selected text*/
+#nav-logo, #cat-text, 
+#other-art, #modal-grad, 
+#sub-btn, #myModal,
+.offcanvas-body{
+    font-family: 'oxford';
+}
+
+/*Size of weather, calendar and social media icons*/
+.fa-solid, .fa-sharp, #sm-icons, #sm-icon{
+    font-size: 3.5rem;
+}
+
+/*Responsible for styling category buttons*/
+button > h5 > a {
+    color:white;
+}
+
+/*Responsible for category buttons changing colour upon hover*/
+button > h5 > a:hover {
+    color: grey;
+}
+
+.sm-links:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/*Responsible for navbar to overlap body*/
+#navbar {
+    z-index:9;
+}
+
+/*Responsible for size of cards*/
+#big-card{
+    width: 26rem;
+}
+
+#small-card{
+    width: 16rem;
+}
+
+/*Responsible for advertisement to overlap navbar*/
+#header-content {
+    position: relative;
+    z-index: 11;
+}
+
+/*Divider/ line above logo*/
+#nav-logo:before {
+    content: "";
+    display: block;
+    width: 7rem;
+    height: 0.03rem;
+    background: white;
+}
+
+/*Divider/ line below logo*/
+#nav-logo:after {
+    content: "";
+    display: block;
+    width: 7rem;
+    height: 0.03rem;
+    background: white;
+}
+
+/*Responsible for postioning of the carousel*/
+#carousel {
+    padding:0;
+    right:0;
+    padding-bottom: 1rem;
+}
+
+/*Responsible for adjusting the category text*/
+#category-text {
+    font-size: 1.8rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*Navbar categories - remove pointer*/
+#cat-list {
+    list-style-type:none;
+}
+
+/*Responsible for removing the in-built link decorations*/
+li > a {
+    text-decoration: none;
+    color:white;
+}
+
+/*Category bar buttons*/
+#cat-btn{
+    width:110%;
+}
+
+/*Article's text background - for visibility of text*/
+.article-bg {
+    color: white;
+    background-color: rgba(0, 0, 20, 0.6);
+}
+
+/*Responsible for changing card-title colour*/
+.card-title {
+    color: black;
+}
+
+/*Divider*/
+.hr {
+    color:black;
+    width: width;
+}
+
+
+/*Responsible for background's colour gradient*/
+/*Adapted from https://codepen.io/P1N2O/details/pyBNzX*/
+#modal-grad,.modal-header,
+ .modal-bg
+{
+	background: linear-gradient(-45deg, #272727, #141414, #3a3a3a, #1a1a1a);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*"Subscribe Me" popup button*/
+#sub-btn {
+    bottom:0;
+    right:0;
+    position: fixed;
+}
+
+#carou-alt {
+    left:1rem;
+    text-align: left;
+    top:1rem;
+}
+
+/*Adjustment of main carousel height*/
+.carou-height {
+    height:90vh;
+}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 900px){
+    #header-content, #cat-text, 
+    .misc-icons,.add-text, 
+    #carousel, #art-text,
+    #sm-icons, #sub-btn,
+    .mob-hid{ 
+        display: none;   
+    }
+
+    #sm-icon {
+        text-align: center;
+        margin-right: 2.8rem;
+    }
+
+
+    .navbar {
+        height:10vh;
+    }
+
+    .navbar-toggler {
+        top:0;
+    }
+    
+    .carousel-inner{
+        height:55vh;
+        
+    }
+    
+    .display-6, .display-5{
+        font-size: 1.5rem;
+    }
+    .display-2 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption {
+        margin-top: 4rem;
+    }
+
+    #small-card {
+        width: 100%;
+    }
+    
+    .sm-icons {
+    
+    }
+
+
+}
+@media only screen and (max-width: 1399px){
+    #header-content, #cat-text, 
+    .misc-icons,.add-text, 
+    #carousel, #art-text,
+    #sm-icons, #sub-btn,
+    #big-card{ 
+        display: none;   
+    }
+
+    #sm-icon {
+        text-align: center;
+        margin-right: 2.8rem;
+    }
+
+
+    .navbar {
+        height:10vh;
+    }
+
+    .navbar-toggler {
+        top:0;
+    }
+    
+    .carousel-inner{
+        height:55vh;
+        
+    }
+    
+    .display-6, .display-5{
+        font-size: 1.5rem;
+    }
+    .display-2 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption {
+        margin-top: 4rem;
+    }
+
+    #small-card {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 2099px){
+    #cat-text{
+        padding-top: 0.5rem;
+    }
+}

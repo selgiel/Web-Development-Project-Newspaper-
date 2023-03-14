@@ -1,0 +1,148 @@
+/*Linkage to external fontstyle*/
+@font-face {
+    font-family: 'oxford';
+    src: url(../oxford-font/Oxford-LAqy.ttf);
+}
+
+/*Implement font on selected text*/
+#nav-logo, #misc, 
+#cat-text, #other-art, 
+#nav-font, #sub-btn, 
+.modal-title, #modal-grad{
+    font-family: 'oxford';
+}
+
+/*Size of weather, calendar and social media icons*/
+.fa-solid, .fa-sharp, #sm-icons, #sm-icon{
+    font-size: 1.5em;
+}
+
+/*Responsible for category button text colour*/
+
+button > h5 > a {
+    color:white;
+}
+
+/*Responsible for category buttons changing colour upon hover*/
+button > h5 > a:hover 
+{
+    color: grey;
+}
+
+/*Responsible for navbar to overlap body*/
+#navbar {
+    position: fixed;
+    z-index:1;
+}
+
+/*Responsible for category bar to overlap navbar*/
+#header-content, #cat-text {
+    position: relative;
+    z-index: 2;
+}
+
+/*Divider above logo*/
+#nav-logo:before {
+    content: "";
+    display: block;
+    width: 7em;
+    height: 0.03em;
+    background: white;
+}
+
+/*Divider below logo*/
+#nav-logo:after {
+    content: "";
+    display: block;
+    width: 7em;
+    height: 0.03em;
+    background: white;
+}
+
+#category-text {
+    font-size: 1.8em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*Navbar categories - remove pointer*/
+#cat-list {
+    list-style-type:none;
+}
+
+/*Category bar buttons*/
+#cat-btn{
+    width:110%;
+}
+
+/*"Subscribe Me" popup button*/
+#sub-btn {
+    bottom:0;
+    right:0;
+    position: fixed;
+}
+
+@media only screen and (max-width: 1299px){
+    #header-content, #cat-text, 
+    #misc, .add-text, 
+    #carousel, #art-text, 
+     #sub-btn, #excl-mob
+    { 
+        display: none;   
+    }
+
+    #mob-view{
+        margin-top: 3rem;
+    }
+
+    .card-title, .card-text{
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        top:0;
+    }
+
+    .fa-solid, .fa-sharp, #sm-icons{
+        display: none;
+    }
+
+    /*Reflect facebook icon*/
+    #sm-icon {
+        text-align: center;
+        margin-right:2rem;
+    }
+}
+
+/*Standard view for Screen*/
+@media only screen and (max-width: 1199px){
+    #header-content, #cat-text, 
+    #misc, .add-text, 
+    #carousel, #art-text, 
+     #sub-btn, #excl-mob,
+    { 
+        display: none;   
+    }
+
+    #mob-view{
+        margin-top: 3rem;
+    }
+
+    .card-title, .card-text{
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        top:0;
+    }
+
+    .fa-solid, .fa-sharp, #sm-icons{
+        display: none;
+    }
+
+    /*Reflect facebook icon*/
+    #sm-icon {
+        text-align: center;
+        margin-right:2rem;
+    }
+}

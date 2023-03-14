@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%;margin: 0px;padding: 0px;overflow-x: hidden; ">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>World</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/World.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    </head>
+    <body>
+
+    <!--Start of NavBar-->
+    <nav class="navbar navbar-dark bg-black fixed-top pb-0" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <h5 id="nav-logo">
+              Daily <br> Communiqué
+            </h5>
+        </a>
+        <div class="row text-white text-nowrap ms-left g-5" id="misc">
+          <div class="col-md-6">
+          <div><i class="fa-solid fa-sun p-2 fs-4"></i>Sunny | 31°</div>
+          </div>
+          <div class="col-md-6">
+            <div><i class="fa-sharp fa-regular fa-calendar p-2 fs-4"></i>Fri, 31 Jan</div>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark bg-black" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-black">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <h3 id="navbar-header"><a class="nav-link active text-white" aria-current="page" href="index.html">Home</a></h3>
+              </li>
+              <li class="nav-item text-white fs-5">
+                <h5>Categories</h5>
+                <ul id="cat-list">
+                  <li><a href="Singapore.html" class="text-decoration-none  text-white">Singapore</a></li>
+                  <li><a href="World.html" class="text-decoration-none text-white">World</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Politics</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Finance</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Sports</a></li>
+                  <li><a href="#" class="text-decoration-none text-secondary">Environment</a></li>
+                  <li><a href="Photography.html" class="text-decoration-none text-white">Photography</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown fs-5">
+                <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu dropdown-menu">
+                  <li><a class="dropdown-item lead fs-6" href="#">help@dailycommunique.com</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item lead fs-6" href="#">+65 9123 4567</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="row p-0">
+              <p class="ms-auto fs-5">Join our mailing list today!</p>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navbar-->
+
+    <!--Start of Categories Bar-->
+    <div class="row justify-content-center bg-black pt-3" id="cat-text">
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="Singapore.html" class="text-decoration-none">Singapore</a></h5></button>
+      </div>
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="World.html" class="text-decoration-none text-warning">World</a></h5></button>
+      </div>
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="World.html" class="text-decoration-none" >Politics</a></h5></button>
+      </div>
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="World.html" class="text-decoration-none">Finance</a></h5></button>
+      </div>
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="World.html" class="text-decoration-none">Sports</a></h5></button>
+      </div>
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="World.html" class="text-decoration-none">Lifestyle</a></h5></button>
+      </div>
+      <div class="col-md-1" id="category-text">
+        <button type="button" class="btn btn-black" id="cat-btn"><h5>
+          <a href="Photography.html" class="text-decoration-none">Photography</a></h5></button>
+      </div>
+    </div>
+    <!--End of Categories bar-->
+
+    <!--Start of Carousel-->
+    <main>
+      <div class="container pt-4">
+        <div class="row" id="mob-view">
+          <div class="col-md-5">
+            <div aria-hidden="true" class="placeholder-wave">
+              <span class="placeholder placeholder-sm w-100 pe-none"></span>
+            </div>
+            <div class="display-1" id="hover-eff">
+              Stories from all <br> around the <br> 
+              <a href="#" class="display-1 text-decoration-none text-dark" title="Click to view the latest article"> <!--Link to the latest World's article-->
+                <strong>World</strong></a>
+            </div>
+            <div aria-hidden="true" class="placeholder-wave mt-3">
+              <span class="placeholder placeholder-sm w-100 pe-none"></span>
+            </div>
+            <div class="display-6" id="excl-mob">We curate stories from all over the world to keep you updated on global happenings</div>
+          </div>
+          
+          <div class="col-md-7">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                  <img src="images/us-1.jpg" class="carou-height d-block w-100 rounded" alt="...">
+                  <div class="carousel-caption " id="carou-alt">
+                    <div class="lead article-bg" >
+                      <div class="display-6"id="other-art">
+                        US
+                      </div>
+                      <div class="fs-4 text-white">
+                          Women's access to safe abortion are jeoparadised, still consider the US the land 
+                          of freedom?
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                  <img src="images/ukraine-1.jpg" class=" carou-height d-block w-100 rounded" alt="...">
+                  <div class="carousel-caption " id="carou-alt">
+                    <div class="lead article-bg">
+                      <div class="display-6" id="other-art">
+                        Ukraine
+                      </div>
+                      <div class="fs-4 text-white">
+                        Ukrainians share about their survival stories in 
+                        modern warfare
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/malaysia.jpg" class="carou-height d-block w-100 rounded" alt="...">
+                  <div class="carousel-caption " id="carou-alt">
+                    <div class="lead article-bg">
+                      <div class="display-6" id="other-art">
+                        Malaysia
+                      </div>
+                      <div class="fs-4 text-white">Gloomy weather and unpredictable rain result in houses
+                        getting flooded and people getting displaced..
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--End of Carousel-->
+
+    <!--Start of Individual Articles-->
+    <section>
+      <div class="container" id="other-art">
+        <hr class="divider">
+        <div class="row">
+           <!--Start of FIRST column Articles-->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>India grapples with devastating COVID-19 surge</b></h5>
+                <p class="card-text">India is facing a catastrophic surge in COVID-19 cases, with 
+                  hospitals overwhelmed and oxygen supplies running low in many parts of the country.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Brazil</b></h5>
+                <p class="card-text">Rio Carnival cancelled for second year in a row due to COVID-19.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>France</b></h5>
+                <p class="card-text">Macron announces COVID-19 lockdown as cases surge.</p>
+              </div>
+            </div>
+            <div class="card mt-1 mb-1">
+              <img src="images/antartica.jpg" class="card-img-top" alt="Depiction of Antartica">
+              <div class="card-body">
+                <h5 class="card-title"><b>World's largest iceberg breaks off from Antarctica</b></h5>
+                <p class="card-text">The world's largest iceberg, dubbed A-76, broke off from the western side of 
+                  Antarctica, raising concerns about rising sea levels and the impact of climate change.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="text-decoration-none text-black">Read more</a></li>
+                <li class="list-group-item"><a href="https://www.asoc.org/campaign/climate-crisis-in-antarctica/" class="text-decoration-none text-black">
+                  Contribute to relevant organisation!</a></li>
+              </ul>
+            </div>   
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>South Korea</b></h5>
+                <p class="card-text">South Korea passes law to combat spy cameras in public places.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Japan</b></h5>
+                <p class="card-text">Japan's Prime Minister announces resignation due to health issues.</p>
+              </div>
+            </div>             
+          </div>
+           <!--End of Articles-->
+
+          <!--Start of SECOND column Articles-->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Taliban takes control of Afghanistan</b></h5>
+                <p class="card-text">The Taliban's rapid takeover of Afghanistan has sparked fears of human rights 
+                  abuses and a humanitarian crisis, with thousands of people attempting to flee the country.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Sweden</b></h5>
+                <p class="card-text">Greta Thunberg nominated for Nobel Peace Prize for second year in a row.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Australia</b></h5>
+                <p class="card-text">Why are so many students, particularly Asians
+                  flying over to continue their education?
+                </p>
+              </div>
+            </div>
+            <div class="card mt-1 mb-1">
+              <img src="images/australia.jpg" class="card-img-top" alt="Depiction of Australia flooding">
+              <div class="card-body">
+                <h5 class="card-title"><b>Australia faces worst flooding in decades</b></h5>
+                <p class="card-text"> Heavy rainfall and severe flooding have left thousands of people 
+                  stranded in eastern Australia, with the military now deployed to help with relief efforts.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="text-decoration-none text-black">Read more</a></li>
+                <li class="list-group-item">
+                  <a href="https://give2asia.org/australia-flood-relief-2022/#:~:text=A%20donation%20of%20AUD%2050,home%20damaged%20by%20the%20flood." 
+                  class="text-decoration-none text-black">Contribute to the Flood Relief</a></li>
+              </ul>
+            </div>      
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Germany</b></h5>
+                <p class="card-text">Germany extends COVID-19 lockdown until February.</p>
+              </div>
+            </div>  
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Portugal</b></h5>
+                <p class="card-text">Portugal announces new COVID-19 lockdown measures.</p>
+              </div>
+            </div>        
+          </div>
+          <!--End of Articles-->
+
+          <!--Start of THIRD column Articles-->
+          <div class="col-md-3" id="hid-view">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Paris climate agreement enters into force</b></h5>
+                <p class="card-text">The Paris climate agreement, which aims to limit 
+                  global warming to well below 2 degrees Celsius, has officially entered into force.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Germany</b></h5>
+                <p class="card-text">Merkel announces plan to phase out coal power by 2038.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Canada</b></h5>
+                <p class="card-text">Trudeau announces plan to ban single-use plastics by 2022.</p>
+              </div>
+            </div>
+            <div class="card mt-1 mb-1">
+              <img src="images/myanmar.jpg" class="card-img-top" alt="Depiction of protestors rejecting the military coup">
+              <div class="card-body">
+                <h5 class="card-title"><b>Myanmar military coup sparks international condemnation</b></h5>
+                <p class="card-text">The military coup in Myanmar has drawn widespread condemnation 
+                  from the international community, with many countries imposing sanctions on the regime.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="text-decoration-none text-black">Read more</a></li>
+                <li class="list-group-item"><a href="https://news.un.org/en/story/2023/01/1133002" class="text-decoration-none text-black">Learn more about UN Report</a></li>
+              </ul>
+            </div>        
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>China</b></h5>
+                <p class="card-text">China surpasses US as the world's top destination for foreign investment.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Iran</b></h5>
+                <p class="card-text">Protests erupt after fuel prices increase by 50%.</p>
+              </div>
+            </div>    
+          </div>
+          <!--End of Articles-->
+
+          <!--Start of FOURTH column Articles-->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>China launches first module of space station</b></h5>
+                <p class="card-text">China successfully launched the core module of its 
+                  space station, marking a major milestone in the country's ambitious space program.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>United Kingdom</b></h5>
+                <p class="card-text">Boris Johnson announces national lockdown as new COVID-19 variant spreads.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>India</b></h5>
+                <p class="card-text">Farmers protest against new agriculture laws in Delhi.</p>
+              </div>
+            </div>
+            <div class="card mt-1 mb-1">
+              <img src="images/japan.jpg" class="card-img-top" alt="Depiction of danger sign">
+              <div class="card-body">
+                <h5 class="card-title"><b>Japan announces plans to release Fukushima wastewater into ocean</b></h5>
+                <p class="card-text">Japan has announced controversial plans to release over one million 
+                  tonnes of treated wastewater from the Fukushima nuclear disaster into the Pacific Ocean.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="text-decoration-none text-black">Read more</a></li>
+                <li class="list-group-item"><a href="https://world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-daiichi-accident.aspx#:~:text=18%3A25%20The%20government%20ordered%2020km%20evacuation.&text=11%3A01%20The%20government%20ordered,20km%20radius%20no%2Dgo%20area." 
+                  class="text-decoration-none text-black">Read more about WNS</a></li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>South Korea</b></h5>
+                <p class="card-text">BTS becomes first Korean act to top Billboard Hot 100 chart with "Dynamite."</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Iran</b></h5>
+                <p class="card-text">Protests erupt after fuel prices increase by 50%.</p>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <!--End of Articles-->
+    </section>
+    <!--End of Individual Articles-->
+
+    <!-- Start of Footer-->
+    <footer>
+      <!--Start of Social Media icons-->
+      <div class="row justify-content-center ms-3 mt-4">
+        <div class="col-md-1 ms-1" id="sm-icon">
+          <a class="sm-links fs-5 ms-1 text-decoration-none text-black" href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f"></i></a></i>
+        </div>
+        <div class="col-md-1" id="sm-icons">
+          <a class="sm-links fs-5 ms-1 text-decoration-none text-black" href="https://twitter.com/?lang=en">
+            <i class="fa-brands fa-twitter"></i></a></i>
+        </div>
+        <div class="col-md-1" id="sm-icons">
+        <a class="sm-links fs-5 ms-1 text-decoration-none text-black" href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i></a></i>
+      </div>     
+    </div>
+    <!--End of Social Media icons-->
+
+    <!--Adapted from https://www.youtube.com/watch?v=29ENlVMuTHs-->
+    <!--Start of "Subscribe Now" pop up button-->  
+    <button type="button" class="btn btn-white text-black fixed fs-5" id="sub-btn" data-bs-toggle="modal" data-bs-target="#myModal">Subscribe now!</button>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" >
+                <div class="modal-header">
+                  <h5 class="modal-title text-white">
+                      Daily <br> Communiqué
+                    </h5>
+                </div>
+                <div class="p-3 display-6 modal-title">Receive the latest newsletter from us daily!</div>
+                <div class="modal-body fs-5" id="other-art">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label required">Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label required">Email</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label required">Promocode</label>
+                      <input type="email" class="form-control">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer btn-clr" id="modal-grad">
+                  <button class="btn btn-transparent border-0" type="submit" data-bs-dismiss="modal">Submit</button>
+                  <button class="btn btn-transparent border-0" type="submit" data-bs-dismiss="modal">I'll think about it</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <!--End of "Subscribe Now" pop up button-->  
+    </footer>
+    <!--End of Footer-->
+
+    <!--Adapted from https://www.youtube.com/watch?v=29ENlVMuTHs-->
+    <!--Start of Popup Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#myModal").modal('show');
+        });
+    </script>
+    <!--End of Popup Script-->
+
+    <!--Links to Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
+    crossorigin="anonymous"></script>
+    <!--Links to Bootstrap script-->
+  </body>
+</html>
